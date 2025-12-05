@@ -63,3 +63,6 @@ itspectr.ru
 Ошибочное удаление файла DLL — например, при удалении программы или попытке очистить место на жёстком диске.
 Перезапись DLL-файла — при установке приложения существующий файл DLL может быть перезаписан несовместимым или недействительным файлом DLL.
 Заражение вредоносным ПО — иногда вредоносная программа может удалить или повредить существующий файл DLL.
+- https://github.com/webpro255/Windows-Sysmon-Threat-Hunting-Guide
+- https://www.elastic.co/docs/reference/security/prebuilt-rules/rules/windows/privilege_escalation_unusual_parentchild_relationship так можно искать что-то вроде process.name: [process_name] AND NOT process.parent.name: [normal_parent_process_name]
+- https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_susp_double_extension/ запуск файлов с двойным расширением
